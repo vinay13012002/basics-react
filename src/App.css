@@ -1,0 +1,228 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  overflow-x: hidden;
+}
+
+input,
+textarea,
+button,
+select {
+  border : 1px solid black;
+  padding: 12px;
+}
+
+.container {
+  padding-inline: 24px;
+}
+
+.form-wrapper {
+  width        : 100%;
+  box-shadow   : 0px 0px 5px 5px red;
+  padding-block: 24px;
+}
+
+.img--size {
+  height: 150px;
+  width : 200px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.gap-4 {
+  gap: 24px;
+}
+
+.card {
+  width           : 300px;
+  background-color: white;
+  box-shadow      : 0 0 10px 10px lightblue;
+  padding         : 16px;
+  height          : 445px;
+  overflow        : hidden;
+  display         : flex;
+  flex-direction  : column;
+  justify-content : space-between;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.description,
+.title {
+  text-overflow     : ellipsis;
+  display           : -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow          : hidden;
+
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.mb-4 {
+  margin-bottom: 24px;
+}
+
+.mt-4 {
+  margin-top: 24px;
+}
+
+.btn--submit {
+  width: 220px;
+}
+
+.card-wrapper {
+  width   : 250px;
+  position: relative;
+}
+
+.custom-card {
+  border-radius: 4px;
+  background   : var(--Grey-50, #F6F6F6);
+  padding      : 16px;
+  max-width    : 231px;
+  width        : 100%;
+  position     : absolute;
+}
+
+.custom-card h3 {
+  color      : var(--Primary-100, #224289);
+  font-family: "PP Mori";
+  font-size  : 14px;
+  font-style : normal;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+.custom-card span {
+  position     : absolute;
+  border-radius: 3.182px;
+  background   : var(--Primary-100, #224289);
+  color        : var(--Grey-White, #FFF);
+  text-align   : center;
+  font-family  : "PP Mori";
+  font-size    : 12px;
+  font-style   : normal;
+  font-weight  : 600;
+  line-height  : 130%;
+  padding      : 4px 8px;
+  top          : -12px;
+}
+
+.slick-slide {
+  height     : 250px !important;
+  display    : flex !important;
+  align-items: center;
+}
+
+.hr {
+  background  : #CCC;
+  height      : 2px;
+  margin-block: 24px;
+  position    : relative;
+}
+
+.hr::before {
+  content : '*';
+  position: absolute;
+  top     : -10px;
+}
+
+
+
+.hr::before {
+  right    : 50%;
+  transform: translateX(-50%);
+}
+
+
+.cards-childs>div>div>div:nth-child(odd) .custom-card {
+  bottom: 30px;
+}
+
+.cards-childs>div>div>div:nth-child(even) .custom-card {
+  top: 30px;
+}
+
+td,
+th {
+  padding: 24px;
+}
+
+.imgs-fruits {
+  height       : 100%;
+  width        : 80%;
+  border-radius: 0 50% 50% 0;
+}
+
+.imgs-fruits--can {
+  height    : 715px !important;
+  overflow  : hidden;
+  object-fit: cover;
+}
+
+
+.slider-wrapper {
+  /* height          : 1vh; */
+  background-color: green;
+  display         : flex;
+
+}
+
+
+.fruits-can--wrapper {
+  width: 50%;
+}
+
+.single-fruit-wrapper {
+  width: 36%;
+}
+
+.slick-slide {
+  height: 600px !important;
+}
+
+.fruits-can--wrapper .slick-initialized .slick-slide {
+  justify-content: center;
+}
+
+.fruits-can--wrapper .slick-prev {
+
+  display: none !important;
+}
+
+.slick-next {
+  /* left: 60px !important; */
+}
+
+.guava-bg {
+  background-color: #87990a;
+}
+
+.orange-bg {
+  background-color: #f1b225;
+}
+
+.staruberry-bg {
+  background-color: #ff0f00;
+}
+
+.pineapple-bg {
+  background-color: #f2fafa;
+}
+
+.watermelon-bg {
+  background-color: #ff6361;
+}
