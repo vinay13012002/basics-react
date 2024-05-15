@@ -1,4 +1,4 @@
-#vinay applicaitons
+#vinay applications
 
 # Getting Started with Create React App
 
